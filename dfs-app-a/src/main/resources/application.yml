@@ -1,0 +1,22 @@
+
+server:
+  port: 8183
+
+
+spring:
+  application:
+    name: dfs-app-a
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true # Optional, for preferring IP address in registration

@@ -1,0 +1,17 @@
+
+server:
+  port: 8184
+
+
+spring:
+  application:
+    name: dfs-app-b
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true # Optional, for preferring IP address in registration
